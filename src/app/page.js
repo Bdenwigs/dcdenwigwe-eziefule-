@@ -1,66 +1,57 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+import HomeClient from "@/components/HomeClient";
+import { sanityClient } from "@/lib/sanity.client";
+import {
+  allTeamMembersQuery,
+  latestCaseStudiesQuery,
+  latestArticlesQuery,
+} from "@/lib/sanity.queries";
+import { fetchYouTubeVideos } from "@/lib/youtube";
 
-export default function Home() {
+export default async function Home() {
+  const backgroundImages = [
+    "/images/hero1.jpg",
+    "/images/hero2.jpg",
+    "/images/hero3.jpg",
+  ];
+
+  const messages = [
+    "Fighting For Justice With Precision, Competence and Devotion",
+    "Empowering Lives with Trusted Legal counsel in Nigeria",
+    "Dedication, Loyalty and Integrity-driven Legal Solutions",
+    "Your Partners in Fairness, Rights, and Excellent Representation",
+    "Delivering Compassionate Advocacy Across Nigeria and Beyond",
+    "Trusted Advisors for Families, Businesses, and Communities",
+    "Protecting Your Rights, Guaranteeing Your Future",
+    "Navigating Nigeria’s Legal Landscape with Precision and Care",
+  ];
+
+  // Fetch dynamic data from Sanity and YouTube
+  let lawyers = [];
+  let videos = [];
+  let caseStudies = [];
+  let articles = [];
+
+  try {
+    [lawyers, videos, caseStudies, articles] = await Promise.all([
+      sanityClient.fetch(allTeamMembersQuery),
+      fetchYouTubeVideos(
+        process.env.NEXT_PUBLIC_YOUTUBE_CHANNEL_ID || "UCEicvUSzAacMjDwqMrv_Fzw",
+      ),
+      sanityClient.fetch(latestCaseStudiesQuery),
+      sanityClient.fetch(latestArticlesQuery),
+    ]);
+  } catch (error) {
+    console.error("Error fetching homepage data:", error);
+  }
+
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className={styles.intro}>
-          <h1>To get started, edit the page.js file.</h1>
-          <p>
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className={styles.secondary}
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
-    </div>
+    <HomeClient
+      backgroundImages={backgroundImages}
+      messages={messages}
+      lawyers={lawyers || []}
+      videos={videos || []}
+      caseStudies={caseStudies || []}
+      articles={articles || []}
+    />
   );
 }
