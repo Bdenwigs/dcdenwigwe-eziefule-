@@ -67,7 +67,7 @@ export default async function ServiceDetailPage({ params }) {
       <header className="subpage-header services position-relative d-flex align-items-center overflow-hidden" style={{ minHeight: '75vh' }}>
         <div className="container position-relative z-index-2 py-5" data-aos="fade-right">
           <div className="row">
-            <div className="col-xl-8 col-lg-10">
+            <div className="col-xl-8 col-lg-10 py-3">
               <div className="mb-4">
                 <span className="badge px-4 py-2 text-uppercase fw-bold mb-3 tracking-widest" style={{ backgroundColor: '#996515', fontSize: '0.8rem' }}>
                   Specialized Legal Practice
