@@ -26,8 +26,7 @@ export default async function ServicesPage() {
       <header className="subpage-header services position-relative d-flex align-items-start justify-content-start text-start overflow-hidden" style={{ minHeight: '60vh' }}>
         <div className="container position-relative z-index-2 py-5" data-aos="zoom-out">
           <div className="row justify-content-center">
-            <div className="">
-              <h6 className="text-uppercase fw-bold mb-3 tracking-widest text-golden" style={{ letterSpacing: '4px' }}>Expertise & Excellence</h6>
+            <div className="pb-3">
               <h1 className="display-1 fw-bold mb-4 text-shadow" style={{ fontFamily: 'Tahoma, sans-serif' }}>Our Services</h1>
               <p className="lead fs-3 opacity-90 text-white shadow-sm" style={{ maxWidth: '800px' }}>
                 Delivering tailored, precision-driven legal solutions to navigate Nigeria’s complex regulatory and judicial landscape.
