@@ -28,7 +28,7 @@ export default async function ServicesPage() {
           <div className="row justify-content-center">
             <div className="pb-3">
               <h1 className="display-1 fw-bold mb-4 text-shadow" style={{ fontFamily: 'Tahoma, sans-serif' }}>Our Services</h1>
-              <p className="lead fs-3 opacity-90 text-white shadow-sm" style={{ maxWidth: '800px' }}>
+              <p className="lead opacity-90 text-white shadow-sm" style={{ maxWidth: '800px' }}>
                 Delivering tailored, precision-driven legal solutions to navigate Nigeria’s complex regulatory and judicial landscape.
               </p>
             </div>
