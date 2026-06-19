@@ -23,7 +23,7 @@ export default async function ServicesPage() {
   return (
     <main className="bg-light">
       {/* Impactful Responsive Hero */}
-      <header className="subpage-header services position-relative d-flex align-items-start justify-content-start text-start overflow-hidden" style={{ minHeight: '60vh' }}>
+      <header className="subpage-header services position-relative d-flex align-items-start justify-content-start text-start overflow-hidden" style={{ minHeight: '70vh' }}>
         <div className="container position-relative z-index-2 py-5" data-aos="zoom-out">
           <div className="row justify-content-center">
             <div className="pb-3">
