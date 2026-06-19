@@ -74,7 +74,7 @@ export default async function ServiceDetailPage({ params }) {
                 </span>
               </div>
               <h1 className="display-1 fw-bold mb-4 text-shadow" style={{ fontFamily: 'Tahoma, sans-serif' }}>{area.title}</h1>
-              <p className="lead fs-2 mb-0 opacity-90 text-white" style={{ maxWidth: '800px', lineHeight: '1.4' }}>
+              <p className="lead fs-2 mb-5 opacity-90 text-white" style={{ maxWidth: '800px', lineHeight: '1.4' }}>
                 Delivering strategic excellence and authoritative representation in {area.title.toLowerCase()} across Nigeria.
               </p>
             </div>
