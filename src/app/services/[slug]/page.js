@@ -68,7 +68,7 @@ export default async function ServiceDetailPage({ params }) {
         <div className="container position-relative z-index-2 pb-5" data-aos="fade-right">
           <div className="row">
             <div className="col-xl-8 col-lg-10">
-              <div className="mb-4">
+              <div className="mb-4 pt-5 mt-5">
                 <span className="badge px-4 py-2 text-uppercase fw-bold mb-3 tracking-widest pt-5 mt-5" style={{ backgroundColor: '#996515', fontSize: '0.8rem' }}>
                   Specialized Legal Practice
                 </span>
