@@ -237,7 +237,7 @@ export default async function ServiceDetailPage({ params }) {
         .group:hover .group-hover-golden { color: #996515 !important; }
         .z-index-2 { z-index: 2; }
         .text-shadow { text-shadow: 2px 2px 10px rgba(0,0,0,0.5); }
-        .service-prose h2 { font-size: 3rem; }
+        .service-prose h2 { font-size: 1.5rem; }
         .service-prose p { margin-bottom: 2rem; }
         .card-overlay-fancy {
           position: absolute;
