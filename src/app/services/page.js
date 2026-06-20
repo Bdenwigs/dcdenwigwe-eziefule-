@@ -25,9 +25,9 @@ export default async function ServicesPage() {
       {/* Impactful Responsive Hero */}
       <header className="subpage-header services position-relative d-flex align-items-start justify-content-start text-start overflow-hidden" style={{ minHeight: '70vh' }}>
         <div className="container position-relative z-index-2 py-5" data-aos="zoom-out">
-          <div className="row justify-content-center">
-            <div className="pb-3">
-              <h1 className="display-1 fw-bold mb-4 text-shadow" style={{ fontFamily: 'Tahoma, sans-serif' }}>Our Services</h1>
+          <div className="row justify-content-center pt-5 mt-md-5">
+            <div className="pb-3 mt-5 pt-lg-5">
+              <h1 className="display-1 fw-bold mb-4 text-shadow mt-5 pt-5" style={{ fontFamily: 'Tahoma, sans-serif' }}>Our Services</h1>
               <p className="lead opacity-90 text-white shadow-sm" style={{ maxWidth: '800px' }}>
                 Delivering tailored, precision-driven legal solutions to navigate Nigeria’s complex regulatory and judicial landscape.
               </p>
