@@ -30,7 +30,7 @@ export default function Footer() {
 
 
             <p className="text-white opacity-75 mb-4 pe-lg-5" style={{ fontSize: '1rem', lineHeight: '1.8' }}>
-              D.C. Denwigwe SAN & Associates is a premier legal firm dedicated to providing trusted legal solutions with integrity, precision, and devotion across Nigeria and beyond.
+              D.C. Denwigwe & Associates is a premier legal firm dedicated to providing trusted legal solutions with integrity, precision, and devotion across Nigeria and beyond.
             </p>
             <div className="d-flex gap-3 mt-4">
               {socialIcons.map((icon) => (
@@ -74,17 +74,17 @@ export default function Footer() {
                 <strong>Office Address:</strong>
               </p>
               <address className="opacity-75 lh-lg" style={{ fontSize: '0.95rem' }}>
-                123 Legal Excellence Road,<br />
-                Victory Plaza, 5th Floor,<br />
-                Abuja, Nigeria
+                No: 34 Works Road, Beside Madona Schools- Bala Junction<br />
+                Owerri Municipal<br />
+                Imo State, Nigeria
               </address>
             </div>
             <div className="mb-3 text-white">
               <p className="mb-1" style={{ fontSize: '0.95rem' }}>
-                <strong>Email:</strong> <a href="mailto:hello@sanassociates.com" className="text-white opacity-75 text-decoration-none hover-primary">hello@sanassociates.com</a>
+                <strong>Email:</strong> <a href="mailto:hello@sanassociates.com" className="text-white opacity-75 text-decoration-none hover-primary">contact@dcdenwigwe.com</a>
               </p>
               <p className="mb-0" style={{ fontSize: '0.95rem' }}>
-                <strong>Phone:</strong> <a href="tel:+2340000000000" className="text-white opacity-75 text-decoration-none hover-primary">+234 000 000 0000</a>
+                <strong>Phone:</strong> <a href="tel:+2348033253970" className="text-white opacity-75 text-decoration-none hover-primary">+234 803 325 3970</a>
               </p>
             </div>
           </div>
@@ -95,7 +95,7 @@ export default function Footer() {
         <div className="row align-items-center">
           <div className="col-md-6 text-center text-md-start">
             <p className="text-white opacity-50 mb-0" style={{ fontSize: '0.85rem' }}>
-              &copy; {new Date().getFullYear()} D.C. Denwigwe SAN & Associates. All rights reserved.
+              &copy; {new Date().getFullYear()} D.C. Denwigwe & Associates. All rights reserved.
             </p>
           </div>
           <div className="col-md-6 text-center text-md-end mt-3 mt-md-0">

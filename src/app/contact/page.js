@@ -37,14 +37,14 @@ export default function ContactPage() {
           <div className="col-lg-5 ps-lg-5 pt-md-5 mt-lg-5">
             <div className="mb-5 pt-md-5 ">
               <h2 className="fs-2 fw-bold mb-4 text-black">General Inquiries</h2>
-              <p className="mb-4 text-black fs-4 fw-bold">Email: <span className="fw-normal">info@dcdenwigweandassociates.com</span></p>
-              <p className="text-black fw-bold fs-4">Phone: <span className="fw-normal">+234 000 000 0000</span></p>
+              <p className="mb-4 text-black fs-4 fw-bold">Email: <span className="fw-normal">contact@dcdenwigwe.com</span></p>
+              <p className="text-black fw-bold fs-4">Phone: <span className="fw-normal">+234 803 3253 970</span></p>
             </div>
             
             <div>
               <h2 className="fs-2 fw-bold mb-4 text-black">Office Location</h2>
               <address className="text-black lh-lg fs-4 fw-bold ">
-                No. 34 Works Road, Owerri, <br />
+                No. 34 Works Road, Beside Madona Model School, Along Bala Road, Owerri, <br />
                 Imo State, Nigeria
               </address>
             </div>
