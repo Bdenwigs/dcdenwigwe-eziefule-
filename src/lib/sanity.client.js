@@ -5,7 +5,7 @@ export const config = {
   dataset: 'production',
   projectId: 'rplldv3y',
   apiVersion: '2023-05-03',
-  useCdn: false,
+  useCdn: true,
 };
 
 export const sanityClient = createClient(config);

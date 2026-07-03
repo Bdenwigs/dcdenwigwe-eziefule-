@@ -1,3 +1,5 @@
+export const revalidate = 60;
+
 import TeamClient from "@/components/TeamClient";
 import { sanityClient } from "@/lib/sanity.client";
 import { allTeamMembersQuery } from "@/lib/sanity.queries";
