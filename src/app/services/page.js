@@ -1,3 +1,5 @@
+export const revalidate = 60;
+
 import { PortableText } from '@portabletext/react';
 import { sanityClient } from '@/lib/sanity.client';
 import { allPracticeAreasQuery } from '@/lib/sanity.queries';
