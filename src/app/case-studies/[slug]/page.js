@@ -47,7 +47,7 @@ export default async function CaseStudyPage({ params }) {
                   </div>
                   <div className="mb-0">
                     <h4 className="h6 text-uppercase fw-bold text-muted small mb-1">Date</h4>
-                    <p className="fw-semibold mb-0">{new Date(cs.publishDate).toLocaleDateString('en-NG', { dateStyle: 'long' })}</p>
+                    <p className="fw-semibold mb-0">{new Date(cs.publishDate || cs._updatedAt || cs._createdAt).toLocaleDateString('en-NG', { dateStyle: 'long' })}</p>
                   </div>
                 </div>
               </div>

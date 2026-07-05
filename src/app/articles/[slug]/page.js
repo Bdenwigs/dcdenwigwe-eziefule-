@@ -26,7 +26,7 @@ export default async function ArticlePage({ params }) {
           <h1 className="display-4 fw-bold">{article.title}</h1>
           <div className="d-flex align-items-center gap-3 mt-3">
              <span className="badge bg-primary text-uppercase">{article.category?.replace('-', ' ')}</span>
-             <span className="text-white opacity-75 small">{new Date(article.publishedAt).toLocaleDateString('en-NG', { dateStyle: 'long' })}</span>
+             <span className="text-white opacity-75 small">{new Date(article._updatedAt || article._createdAt).toLocaleDateString('en-NG', { dateStyle: 'long' })}</span>
           </div>
         </div>
       </header>
