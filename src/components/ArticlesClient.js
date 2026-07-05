@@ -82,7 +82,7 @@ export default function ArticlesClient({ initialArticles }) {
                     </div>
                   </div>
                   <div className="card-body p-4">
-                    <p className="text-muted small mb-2">{new Date(article.publishDate).toLocaleDateString('en-NG', { dateStyle: 'long' })}</p>
+                    <p className="text-muted small mb-2">{new Date(article.publishDate || article._updatedAt || article._createdAt).toLocaleDateString('en-NG', { dateStyle: 'long' })}</p>
                     <h2 className="h5 fw-bold mb-3">{article.title}</h2>
                     <p className="card-text text-muted small line-clamp-3 mb-4">{article.excerpt}</p>
                     <Link href={`/articles/${article.slug}`} className="btn btn-sm btn-outline-primary fw-bold">Read More &rarr;</Link>
