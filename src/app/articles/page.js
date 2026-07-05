@@ -1,3 +1,5 @@
+export const revalidate = 60;
+
 import ArticlesClient from "@/components/ArticlesClient";
 import { sanityClient } from "@/lib/sanity.client";
 import { allArticlesQuery } from "@/lib/sanity.queries";

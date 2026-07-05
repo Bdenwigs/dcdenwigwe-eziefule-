@@ -1,3 +1,5 @@
+export const revalidate = 60; // refresh every 60s
+
 import HomeClient from "@/components/HomeClient";
 import { sanityClient } from "@/lib/sanity.client";
 import {

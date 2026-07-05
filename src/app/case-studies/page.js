@@ -1,3 +1,5 @@
+export const revalidate = 60;
+
 import CaseStudiesClient from "@/components/CaseStudiesClient";
 import { sanityClient } from "@/lib/sanity.client";
 import { allCaseStudiesQuery } from "@/lib/sanity.queries";
