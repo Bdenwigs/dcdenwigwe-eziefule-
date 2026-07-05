@@ -14,6 +14,7 @@ export default function AboutPage() {
 
   return (
     <main>
+      
       {/* Header Section */}
       <header className="subpage-header about" data-aos="fade-down">
         <div className="container p-0">
@@ -92,6 +93,7 @@ export default function AboutPage() {
                       height={400} 
                       className="rounded-circle shadow-sm border border-4 border-light object-cover"
                       style={{ width: '250px', height: '250px' }}
+                      priority
                     />
                   </div>
                 </div>

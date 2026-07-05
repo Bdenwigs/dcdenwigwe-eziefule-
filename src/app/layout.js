@@ -51,8 +51,15 @@ export default function RootLayout({ children }) {
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" 
           integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" 
           crossOrigin="anonymous" 
-          referrerPolicy="no-referrer" 
+          referrerPolicy="no-referrer"
         />
+        <link rel="preload" as="image" href="/images/sectors.avif" />
+        <link rel="preload" as="image" href="/images/service.avif" />
+        <link rel="preload" as="image" href="/images/abouts.avif" />
+        <link rel="preload" as="image" href="/images/ourteam.avif" />
+        <link rel="preload" as="image" href="/images/articles.avif" />
+        <link rel="preload" as="image" href="/images/case.jpg" />
+        <link rel="preload" as="image" href="/images/contactus.avif" />
       </head>
       <body>
         <AOSInit />
