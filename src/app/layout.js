@@ -53,13 +53,7 @@ export default function RootLayout({ children }) {
           crossOrigin="anonymous" 
           referrerPolicy="no-referrer"
         />
-        <link rel="preload" as="image" href="/images/sectors.avif" />
-        <link rel="preload" as="image" href="/images/service.avif" />
-        <link rel="preload" as="image" href="/images/abouts.avif" />
-        <link rel="preload" as="image" href="/images/ourteam.avif" />
-        <link rel="preload" as="image" href="/images/articles.avif" />
-        <link rel="preload" as="image" href="/images/case.jpg" />
-        <link rel="preload" as="image" href="/images/contactus.avif" />
+        
       </head>
       <body>
         <AOSInit />
