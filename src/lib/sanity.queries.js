@@ -18,12 +18,15 @@ export const latestCaseStudiesQuery = `*[_type == "caseStudy"] | order(publishDa
 }`;
 
 // Fetch all Articles
+// Fetch all Articles
 export const allArticlesQuery = `*[_type == "article"] | order(publishedAt desc) {
   title,
   "slug": slug.current,
   excerpt,
   author,
   publishedAt,
+  _createdAt,
+  _updatedAt,
   coverImage,
   seoKeywords
 }`;
