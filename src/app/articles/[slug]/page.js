@@ -20,7 +20,7 @@ export default async function ArticlePage({ params }) {
 
   return (
     <main>
-      <header className="subpage-header">
+      <header className="subpage-header articles">
         <div className="container p-0">
           <Link href="/articles" className="text-white opacity-75 text-decoration-none small mb-3 d-inline-block hover-primary">&larr; Back to Articles</Link>
           <h1 className="display-4 fw-bold">{article.title}</h1>

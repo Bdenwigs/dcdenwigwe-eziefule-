@@ -20,7 +20,7 @@ export default async function CaseStudyPage({ params }) {
 
   return (
     <main>
-      <header className="subpage-header">
+      <header className="subpage-header case">
         <div className="container p-0">
           <Link href="/case-studies" className="text-white opacity-75 text-decoration-none small mb-3 d-inline-block hover-primary">&larr; Back to Case Studies</Link>
           <h1 className="display-4 fw-bold">{cs.title}</h1>

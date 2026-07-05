@@ -20,7 +20,7 @@ export default async function LawyerProfilePage({ params }) {
 
   return (
     <main>
-      <header className="subpage-header">
+      <header className="subpage-header team">
         <div className="container p-0">
           <Link href="/team" className="text-white opacity-75 text-decoration-none small mb-3 d-inline-block hover-primary">&larr; Back to Team</Link>
           <h1 className="display-4 fw-bold">{lawyer.name}</h1>
