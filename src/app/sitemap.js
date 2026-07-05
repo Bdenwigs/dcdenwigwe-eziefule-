@@ -4,8 +4,8 @@ export const revalidate = 60;
 import { sanityClient } from "@/lib/sanity.client";
 import {
   allTeamMembersQuery,
-  latestArticlesQuery,
-  latestCaseStudiesQuery,
+  allArticlesQuery,
+  allCaseStudiesQuery,
   allPracticeAreasQuery, // ✅ Updated to match your frontend services page query
 } from "@/lib/sanity.queries";
 
@@ -15,8 +15,8 @@ export default async function sitemap() {
   // Fetch all data in parallel
   const [lawyers, articles, caseStudies, services] = await Promise.all([
     sanityClient.fetch(allTeamMembersQuery),
-    sanityClient.fetch(latestArticlesQuery),
-    sanityClient.fetch(latestCaseStudiesQuery),
+    sanityClient.fetch(allArticlesQuery),
+    sanityClient.fetch(allCaseStudiesQuery),
     sanityClient.fetch(allPracticeAreasQuery), // ✅ Using the exact query from your frontend page
   ]);
 
